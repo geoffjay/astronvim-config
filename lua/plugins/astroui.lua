@@ -1,8 +1,3 @@
--- AstroUI provides the basis for configuring the AstroNvim User Interface
--- Configuration documentation can be found with `:h astroui`
--- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
---       as this provides autocomplete and documentation while editing
-
 ---@type LazySpec
 return {
   "AstroNvim/astroui",
@@ -15,8 +10,13 @@ return {
       init = { -- this table overrides highlights in all themes
         -- Normal = { bg = "#000000" },
       },
-      astrodark = { -- a table of overrides/changes when applying the astrotheme theme
+      astrodark = {
         -- Normal = { bg = "#000000" },
+      },
+      kanagawa = {
+        CopilotSuggestion = {
+          fg = "#c4746e",
+        },
       },
     },
     -- Icons can be configured throughout the interface

@@ -1,3 +1,4 @@
+---@type LazySpec
 return {
   "APZelos/blamer.nvim",
   lazy = false,
