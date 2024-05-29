@@ -1,3 +1,5 @@
+-- local util = require "lspconfig.util"
+
 ---@type LazySpec
 return {
   "AstroNvim/astrolsp",
@@ -19,7 +21,7 @@ return {
           -- "go",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
-          -- "python",
+          -- "ruby",
         },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
@@ -33,12 +35,41 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      -- "ruby_lsp",
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      -- ruby_lsp = {
+      --   default_config = {
+      --     cmd = { "bundle", "exec", "ruby-lsp" },
+      --     filetypes = { "ruby" },
+      --     root_dir = util.root_pattern("Gemfile", ".git"),
+      --     init_options = {
+      --       enabledFeatures = {
+      --         "documentHighlights",
+      --         "documentSymbols",
+      --         "foldingRanges",
+      --         "selectionRanges",
+      --         -- "semanticHighlighting",
+      --         "formatting",
+      --         "codeActions",
+      --       },
+      --     },
+      --     settings = {},
+      --   },
+      --   commands = {
+      --     FormatRuby = {
+      --       function()
+      --         vim.lsp.buf.format {
+      --           name = "ruby_lsp",
+      --           async = true,
+      --         }
+      --       end,
+      --       description = "Format using ruby-lsp",
+      --     },
+      --   },
+      -- },
     },
     -- customize how language servers are attached
     handlers = {

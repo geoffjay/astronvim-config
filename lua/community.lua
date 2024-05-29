@@ -16,7 +16,10 @@ return {
 
   -- testing (add later when I have time to test, just here as a reminder for now)
   -- { import = "astrocommunity.test.nvim-coverage" },
-  -- { import = "astrocommunity.test.neotest" },
+  { import = "astrocommunity.test.neotest" },
+
+  -- debugging
+  { import = "astrocommunity.debugging.telescope-dap-nvim" },
 
   -- these can be imported/overriden with the plugins folder
 }
