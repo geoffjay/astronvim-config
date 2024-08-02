@@ -7,11 +7,13 @@ return {
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.pack.ruby" },
+  -- standardrb is annoying
+  -- { import = "astrocommunity.pack.ruby" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.templ" },
-  { import = "astrocommunity.pack.typescript" },
+  -- vtsls is annoying
+  -- { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.yaml" },
 
   -- testing (add later when I have time to test, just here as a reminder for now)
