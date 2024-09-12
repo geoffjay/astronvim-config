@@ -69,11 +69,11 @@ return {
       })
     end,
   },
-  {
-    "mfussenegger/nvim-dap",
-    optional = true,
-    dependencies = { "suketa/nvim-dap-ruby", config = true },
-  },
+  -- {
+  --   "mfussenegger/nvim-dap",
+  --   optional = true,
+  --   dependencies = { "suketa/nvim-dap-ruby", config = true },
+  -- },
   {
     "stevearc/conform.nvim",
     optional = true,
