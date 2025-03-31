@@ -6,6 +6,7 @@ return {
   "editorconfig/editorconfig-vim",
   "ruanyl/vim-gh-line",
   "tpope/vim-fugitive",
+  "rhaiscript/vim-rhai",
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
